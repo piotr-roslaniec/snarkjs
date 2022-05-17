@@ -1,7 +1,7 @@
 {
   "name": "snarkjs-patched",
   "type": "module",
-  "version": "0.4.16-rc0",
+  "version": "0.4.16-rc1",
   "description": "zkSNARKs implementation in JavaScript",
   "main": "./build/main.cjs",
   "module": "./main.js",
@@ -43,7 +43,7 @@
     "circom_runtime": "0.1.17",
     "ejs": "^3.1.6",
     "fastfile": "0.0.19",
-    "ffjavascript": "file:./ffjavascript",
+    "ffjavascript": "https://github.com/piotr-roslaniec/ffjavascript#v0.2.51-patch",
     "js-sha3": "^0.8.0",
     "logplease": "^1.2.15",
     "r1csfile": "0.0.35",
