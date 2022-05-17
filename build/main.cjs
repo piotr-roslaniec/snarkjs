@@ -96,22 +96,6 @@ async function getCurveFromName(name) {
     along with snarkJS. If not, see <https://www.gnu.org/licenses/>.
 */
 
-const _revTable = [];
-for (let i=0; i<256; i++) {
-    _revTable[i] = _revSlow(i, 8);
-}
-
-function _revSlow(idx, bits) {
-    let res =0;
-    let a = idx;
-    for (let i=0; i<bits; i++) {
-        res <<= 1;
-        res = res | (a &1);
-        a >>=1;
-    }
-    return res;
-}
-
 
 function log2( V )
 {
